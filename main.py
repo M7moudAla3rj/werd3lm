@@ -37,4 +37,5 @@ schedule.every().day.at("17:30:01").do(i)
 while True:
 
   schedule.run_pending()
+  bot.polling()
 
