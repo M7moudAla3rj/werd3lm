@@ -6,7 +6,7 @@ bot=telebot.TeleBot("1967626202:AAFykDZY-cKrU7UmOCkBxqTKAb97RxbTKCg")
 
 i=0
 chat_id="1202602736"
-chat_id2=""
+#chat_id2=""
 
 
 
@@ -28,18 +28,18 @@ def mes (message):
 def imeges ():
 
   bot.send_message(chat_id , "ورد اليوم من الدراسة")
-  bot.send_message(chat_id2 , "ورد اليوم من الدراسة")
+  #bot.send_message(chat_id2 , "ورد اليوم من الدراسة")
 
   img=open (imege , 'rb')
 
   bot.send_photo(chat_id, img)
-  bot.send_photo(chat_id2, img)
+ # bot.send_photo(chat_id2, img)
 
 def i ():
 
   i = i + 1
 
-schedule.every().day.at("15:30:00").do(imeges)
+schedule.every().day.at("15:10:00").do(imeges)
 
 schedule.every().day.at("17:30:01").do(i)
 
