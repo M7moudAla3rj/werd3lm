@@ -30,11 +30,11 @@ def i ():
 
   i = i + 1
 
-schedule.every().day.at("12:37:00").do(imeges)
+schedule.every().day.at("12:53:00").do(imeges)
 
 schedule.every().day.at("17:30:01").do(i)
 
 while True:
 
   schedule.run_pending()
-  bot.polling()
+
