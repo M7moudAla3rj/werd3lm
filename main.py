@@ -13,6 +13,10 @@ chat_id="1202602736"
 @bot.message_handler(commands=['start'])
 def start (message):
   bot.reply_to(message , "welcome")
+  
+@bot.message_handler(func=lambda message : True)
+def mes (message):
+  bot.reply_to(message , "شو بدك ؟")
 
 def imeges ():
 
