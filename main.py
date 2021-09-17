@@ -39,7 +39,7 @@ def i ():
 
   i = i + 1
 
-schedule.every().day.at("15:10:00").do(imeges)
+schedule.every().day.at("15:13:00").do(imeges)
 
 schedule.every().day.at("17:30:01").do(i)
 
