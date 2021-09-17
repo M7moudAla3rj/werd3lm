@@ -1,7 +1,5 @@
 import telebot
-
 import schedule
-
 import time
 
 bot=telebot.TeleBot("1967626202:AAFykDZY-cKrU7UmOCkBxqTKAb97RxbTKCg")
@@ -14,7 +12,7 @@ chat_id="1202602736"
 
 @bot.message_handler(commands=['start'])
 def start (message):
-  bot.reply_to(message , "welcomr")
+  bot.reply_to(message , "welcome")
 
 def imeges ():
 
