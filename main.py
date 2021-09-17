@@ -5,15 +5,16 @@ import time
 bot=telebot.TeleBot("1967626202:AAFykDZY-cKrU7UmOCkBxqTKAb97RxbTKCg")
 
 i=0
-@bot.message_handler(commands=['signin'])
-def signin (message):
-  chat_id=message.chat.id
-  with open("chat_id.txt" , "x") as id:
-    id.write(chat_id)
+chat_id="1202602736"
+chat_id2=""
+
+
+
+
 imege="imeges/"+str(i)+".jpg"
 
-with open("chat_id.txt" , "r") as id:
-  chat_id=str(id.read())
+
+
 
 
 @bot.message_handler(commands=['start'])
@@ -27,16 +28,18 @@ def mes (message):
 def imeges ():
 
   bot.send_message(chat_id , "ورد اليوم من الدراسة")
+  bot.send_message(chat_id2 , "ورد اليوم من الدراسة")
 
   img=open (imege , 'rb')
 
   bot.send_photo(chat_id, img)
+  bot.send_photo(chat_id2, img)
 
 def i ():
 
   i = i + 1
 
-schedule.every().day.at("13:09:00").do(imeges)
+schedule.every().day.at("15:30:00").do(imeges)
 
 schedule.every().day.at("17:30:01").do(i)
 
